@@ -1,0 +1,931 @@
+<html>
+<head>
+<title>IT'S MY LIFE!!!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+function toggleNav() {
+        var sidebar = document.getElementById("mySidebar"),
+    main = document.getElementById("main");
+    sidebar.style.width = sidebar.style.width == "207px" ? '0' : '207px';
+    main.style.marginLeft = main.style.marginLeft === "200px" ? '0' : '200px';
+}
+
+function svn() {
+  window.open("http://127.0.0.1/svn/liferepo/");
+}
+  
+  function mrtg() {
+  window.open("http://10.192.16.16/mrtg/");
+}
+
+  function nagios() {
+  window.open("http://127.0.0.1/nagios/");
+}
+
+  function cockpit() {
+  window.open("https://127.0.0.1:9090/system");
+}
+
+  function tomcat() {
+  window.open("http://127.0.0.1:8080/manager/html/list");
+}
+
+function udemy() {
+  window.open("https://fpt-software.udemy.com/organization/home/");
+}
+
+function vcite() {
+  window.open("https://vcite.net/my/");
+}
+
+function w3school() {
+  window.open("https://www.w3schools.com/html/default.asp");
+}
+
+function chrome() {
+  window.open("https://www.google.com/");
+}
+
+function mstester() {
+  window.open("https://www.clickspeedtester.com/double-click-test/");
+}
+
+function hstester() {
+  window.open("https://webcammictest.com/");
+}
+
+function kbtester() {
+  window.open("https://en.key-test.ru/");
+}
+
+function gmail() {
+  window.open("https://mail.google.com/");
+}
+
+function gmrchkr() {
+  window.open("https://www.gingersoftware.com/grammarcheck");
+}
+
+function home() {    
+    setTimeout(function () {
+        location.reload()
+    }, 100);
+}
+</script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;  
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.login {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  backdrop-filter: blur(3px);    
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.login-content {
+  background-color: #fefefe;
+  margin: 0.1% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn1 {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn1, .signupbtn {
+  float: left;
+  width: 50%;  
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 10px;  
+}
+
+/* The Modal (background) */
+.signup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  backdrop-filter: blur(3px);      
+}
+
+/* Modal Content/Box */
+.signup-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.4s;
+  animation: animatezoom 0.4s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+
+
+#mySidenav a {
+  position: absolute;
+  left: -120px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 130px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#svn {
+  top: 100px;
+  background-color: #DDA0DD;
+}
+
+#mrtg {
+  top: 160px;
+  background-color: #2196F3;
+}
+
+#nagios {
+  top: 220px;
+  background-color: #f44336;
+}
+
+#cockpit {
+  top: 280px;
+  background-color: #555
+}
+
+#tomcat {
+  top: 340px;
+  background-color: #663399
+}
+
+#align {    
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+#login {    
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+#signup {    
+  position: absolute;
+  top: 70px;
+  right: 16px;
+  font-size: 18px;
+}
+
+#canvas { 
+  top: 170px;  
+}
+
+body { 
+  background-image: url("https://wallpaperaccess.com/full/2825953.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 3px auto 0;
+  position: relative;
+}
+
+
+
+
+/*open sidebar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0.9;
+}
+
+.sidebar a {
+  padding: 3px 8px 5px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+
+.openbtn {
+	margin: 40px;
+	padding: 4px 5px;
+   
+    z-index: 2;        
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #555
+}
+
+.bars {
+  width: 30px;
+  cursor: pointer;
+}
+.bars .line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: square;
+  transition: stroke-dasharray 400ms,  stroke-dashoffset 400ms;
+  
+}
+.bars .line.top {
+  stroke-dasharray: 40 172;
+}
+.bars .line.middle {
+  stroke-dasharray: 40 111;
+}
+.bars .line.bottom {
+  stroke-dasharray: 40 172;
+}
+.bars.active .top {
+  stroke-dashoffset: -132px;
+}
+.bars.active .middle {
+  stroke-dashoffset: -71px;
+}
+.bars.active .bottom {
+  stroke-dashoffset: -132px;
+}
+
+
+
+#main {
+  transition: margin-left .5s;
+}
+
+
+#Tools, #Personal , #Media {  
+  font-size: 30px;
+  padding: 3px 20px;  
+ }
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;  
+}
+
+.dropdown-btn { 
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;  
+  border: none;
+  background: none;  
+  text-align: left;  
+}
+
+
+
+.clock {
+  background: #ececec;
+  width: 200px;
+  height: 200px;
+  margin: 4% auto 0;
+  border-radius: 50%;  
+  position: relative;
+  box-shadow: inset 0px 0px 30px #a6a9b4, 0 0 0 0.1px #333;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/56/FPT_Software_V%404x.png);  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 160% 90%; 
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ccc;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 2px 4px -1px black;
+}
+
+.hour-hand {
+  position: absolute;
+  z-index: 5;
+  width: 7px;
+  height: 75px;
+  background: #333;
+  top: 25px;
+  transform-origin: 50% 75px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 4px;
+  height: 95px;
+  background: #666;
+  top: 25px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 75px;
+}
+
+.second-hand {
+  position: absolute;
+  z-index: 7;
+  width: 2px;
+  height: 100px;
+  background: red;
+  top: 25px;
+  lefT: 50%;
+  margin-left: -1px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 75px;
+}
+
+
+.diallines {
+  position: absolute;
+  z-index: 2;
+  width: 1px;
+  height: 7px;
+  background: #666;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 100px;
+}
+.diallines:nth-of-type(5n) {
+  position: absolute;
+  z-index: 2;
+  width: 3px;
+  height: 10px;
+  background: #666;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 100px;
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  color: #333;
+  font-size: 15px;
+  font-family: 'Poiret One';
+  font-weight: 700;
+  z-index: 4;
+}
+
+.info {
+  position: absolute;
+  width: 100px;
+  height: 17px;
+  border-radius: 7px;
+  background: #ccc;
+  text-align: center;
+  line-height: 17px;
+  color: #000;
+  font-size: 13px;
+  top: 200px;
+  left: 50%;
+  margin-left: -60px;
+  font-family: "Poiret One";
+  font-weight: 700;
+  z-index: 3;
+  letter-spacing: 3px;
+  margin-left: -60px;
+  left: 55%;
+}
+
+.date {
+    top: 42px;
+  }
+  
+.day {
+    top: 143px;
+}
+
+
+.h12 {
+  top: 10px;
+  left: 46%;
+}
+
+.h11 {
+  left: 52px;
+  top: 20px;
+}
+
+.h10 {
+  left: 25px;
+  top: 49px;
+}
+
+.h9 {
+  left: 15px;
+  top: 92px;
+}
+
+.h8 {
+  bottom: 48px;
+  left: 26px;
+}
+
+.h7 {
+  bottom: 19px;
+  left: 57px;
+}
+
+.h6 {
+  bottom: 10px;
+  left: 48%;
+  
+}
+
+.h5 {
+  bottom: 19px;  
+  left: 137px;
+}
+
+.h4 {
+  bottom: 48px;  
+  left: 167px;
+}
+
+.h3 {
+  top: 92px;
+  right: 15px;
+}
+
+.h2 {
+  top: 49px;  
+  left: 167px;
+}
+
+.h1 {
+  top: 20px;
+  left: 137px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="mySidebar" class="sidebar">
+
+<div class="clock">
+  <div>
+    <div class="info date"></div>
+      <div class="info day"></div>
+  </div>
+  <div class="dot"></div>
+    
+ <div>    
+ 	<div class="hour-hand"></div>  
+    <div class="minute-hand"></div>
+    <div class="second-hand"></div>
+ </div>
+  
+  <div>
+  	<span class="h1">1</span>
+    <span class="h2">2</span>
+    <span class="h3">3</span>
+    <span class="h4">4</span>
+    <span class="h5">5</span>
+    <span class="h6">6</span>
+    <span class="h7">7</span>
+    <span class="h8">8</span>
+    <span class="h9">9</span>
+    <span class="h10">10</span>
+    <span class="h11">11</span>
+    <span class="h12">12</span>  
+  </div>
+  <div class="diallines"></div>
+</div>
+
+
+ <hr style="width:100%;text-align:left">
+ 
+  <a id="Tools" type="button" class="dropdown-btn" href="#" ><i class="fa fa-caret-down"> Tools</i></a>
+  <div class="dropdown-container">
+    
+    <a type="button" value="MSTester" onclick="mstester()" href="#"><i class="fa fa-renren" aria-hidden="true"></i> MSTester</a>
+    <a type="button" value="HSTester" onclick="hstester()" href="#"><i class="fa fa-microphone" aria-hidden="true"></i> HSTester</a>
+    <a type="button" value="KBTester" onclick="kbtester()" href="#"><i class="fa fa-th-large" aria-hidden="true"></i> KBTester</a>
+    </div>
+    
+  <a id="Personal" type="button" class="dropdown-btn" href="#" ><i class="fa fa-caret-down"></i> Personal</a>
+  <div class="dropdown-container">  
+  
+   <a type="button" value="Udemy" onclick="udemy()" href="#"><i class="fa fa-steam-square" aria-hidden="true"></i> Udemy</a>
+    <a type="button" value="Vcite" onclick="vcite()" href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Vcite</a>
+    <a type="button" value="W3school" onclick="w3school()" href="#"><i class="fa fa-book" aria-hidden="true"></i> W3school</a>
+    <a type="button" value="Chrome" onclick="chrome()" href="#"><i class="fa fa-chrome" aria-hidden="true"></i> Chrome</a>
+    <a type="button" value="Gmrchkr" onclick="gmrchkr()" href="#"><i class="fa fa-check" aria-hidden="true"></i> Gmrchkr</a>
+ 
+   </div> 
+    
+  <a id="Media" type="button" class="dropdown-btn" href="#" ><i class="fa fa-caret-down"></i> Media</a>
+  <div class="dropdown-container">  
+  
+	<a type="button" value="Gmail" onclick="gmail()" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Gmail</a>
+    
+	</div>
+    
+    
+</div>
+
+
+<div id="main">
+  <button id="Open Sidebar"  class="openbtn" onclick="toggleNav()"><svg class="bars" viewBox="0 0 100 100" onclick="this.classList.toggle('active')">
+      <path class="line top" d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"></path>
+      <path class="line middle" d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"></path>
+      <path class="line bottom" d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272"></path>
+    </svg></button>
+  
+  
+<script>
+
+var dialLines = document.getElementsByClassName('diallines');
+var clockEl = document.getElementsByClassName('clock')[0];
+
+for (var i = 1; i < 60; i++) {
+  clockEl.innerHTML += "<div class='diallines'></div>";
+  dialLines[i].style.transform = "rotate(" + 6 * i + "deg)";
+}
+
+function clock() {
+  var weekday = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      d = new Date(),
+      h = d.getHours(),
+      m = d.getMinutes(),
+      s = d.getSeconds(),
+      date = d.getDate(),
+      month = d.getMonth() + 1,
+      year = d.getFullYear(),
+           
+      hDeg = h * 30 + m * (360/720),
+      mDeg = m * 6 + s * (360/3600),
+      sDeg = s * 6,
+      
+     
+      hEl = document.querySelector('.hour-hand'),
+      mEl = document.querySelector('.minute-hand'),
+      sEl = document.querySelector('.second-hand'),     
+      dateEl = document.querySelector('.date'),
+      dayEl = document.querySelector('.day');
+  
+      var day = weekday[d.getDay()];
+  
+  if(month < 9) {
+    month = "0" + month;
+  }
+  
+  hEl.style.transform = "rotate("+hDeg+"deg)";
+  mEl.style.transform = "rotate("+mDeg+"deg)";
+  sEl.style.transform = "rotate("+sDeg+"deg)";
+  dateEl.innerHTML = date+"/"+month+"/"+year;
+  dayEl.innerHTML = day;
+}
+
+setInterval("clock()", 100);
+
+</script>
+
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+
+<button  href="#" id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user-o" aria-hidden="true"></i> Login</button>
+   
+<div id="id01" class="login">
+  
+  <form class="login-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+       <label for="uname"><b>Username</b></label>
+         <input type="text" placeholder="Enter Username" name="uname" required>
+
+       <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="psw" required>
+        
+       <button type="submit">Login</button>
+       <label>
+         <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" >
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var login = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == login) {
+        login.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+<a  style="color:dodgerblue" href="#" id="signup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" >Sign Up</a>
+
+<div id="id02" class="signup">
+  
+  <form class="signup-content animate" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var signup = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == signup) {
+    signup.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+<div class="container" >
+  <div class="center">
+    <form href="#" id="search" class="example" action="/action_page.php" style="margin:auto;max-width:500px">
+       <script async src="https://cse.google.com/cse.js?cx=f428ec78e62df4bce"></script>       
+       <div class="gcse-search"></div>        
+    </form>  
+  </div>
+</div>
+
+<div href="#" id="mySidenav" class="sidenav">
+   <a type="button" value="SVN" onclick="svn()" href="#" id="svn"><i class="fa fa-globe" aria-hidden="true"></i> SVN</a> 
+    <a type="button" value="MRTG" onclick="mrtg()" href="#" id="mrtg"><i class="fa fa-globe" aria-hidden="true"></i> MRTG</a>
+     <a type="button" value="NAGIOS" onclick="nagios()" href="#" id="nagios"><i class="fa fa-globe" aria-hidden="true"></i> NAGIOS</a>
+    <a type="button" value="COCKPIT" onclick="cockpit()" href="#" id="cockpit"><i class="fa fa-globe" aria-hidden="true"></i> COCKPIT</a>
+   <a type="button" value="TOMCAT" onclick="tomcat()" href="#" id="tomcat"><i class="fa fa-globe" aria-hidden="true"></i> TOMCAT</a>
+  
+   </div>   
+ </div>
+</body>
+</html>
